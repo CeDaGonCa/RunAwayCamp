@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Player
   - SolidObjects
-  - 
+  - Hunter
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 481019419
+    locked: 0
+  - name: Foreground
+    uniqueID: 2935726003
     locked: 0
   - name: Player
     uniqueID: 1956963713

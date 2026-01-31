@@ -1,7 +1,10 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
+public enum hunterState {hunting, reaping};
 public class HunterController : MonoBehaviour
 {
     public float moveSpeed;
@@ -10,10 +13,13 @@ public class HunterController : MonoBehaviour
     private Vector2 input;
     
     private Animator animator;
+    private hunterState state;
     
     private Vector3[] possibleDirections;
 
     [SerializeField] Transform playerPos;
+    [SerializeField] LayerMask playerLayer;
+    public float circleRadius = 1.25f;
     
     
     private void Awake()
@@ -30,15 +36,31 @@ public class HunterController : MonoBehaviour
 
     public void HandleUpdate()
     {
-        
-        
+        switch (state)
+        {
+            case hunterState.hunting:
+                {
+                    hunt();
+                    break;
+                }
+            case hunterState.reaping:
+                {
+                    reap();
+                    break;
+                }
+        }
+    }
+    private void hunt()
+    {
         if (!isMoving)
         {
+            HashSet<Vector3> visitedPosition = new HashSet<Vector3>();
             float minDistance = float.MaxValue;
             // need to check if its walkable in future
             Vector3 direction = Vector3.zero;
             foreach (var availableDirection in possibleDirections){
                 Vector3 newPosition = this.transform.position + new Vector3(availableDirection.x,availableDirection.y,0f);
+                //if(!isWalkable(newPosition) || visitedPosition.Contains(newPosition)) continue;
                 float distance = manhattanDistance(this.playerPos.position,newPosition);
                 
                 if (distance < minDistance)
@@ -47,11 +69,51 @@ public class HunterController : MonoBehaviour
                     direction = availableDirection;
                 }
             }
+
             StartCoroutine(Move(transform.position + direction));
+            if(Physics2D.OverlapCircle(transform.position,circleRadius,playerLayer) != null)
+            {
+                Debug.Log("YOU ARE DEAD");
+                state = hunterState.reaping;
+            }
+            visitedPosition.Add(transform.position + direction);
         }
+    }
+    private bool isWalkable(Vector3 targetPos)
+    {
+        
+        if(Physics2D.OverlapCircle(targetPos, 0.2f,solidObjectsLayer) != null){
+            return false;
+        }
+        return true;
+    
+    }
+    
+    /*
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(transform.position, circleRadius);
+    }
+    */
+    
+    /*
+    Haven't decided if death should always kill or only when they move
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+    
+        Debug.Log("TRIGGERED");
+        Debug.Log($"og layer = {collision.gameObject.layer}, Player layer = {playerLayer}");
+        if(collision.gameObject.layer name == something)
+        {
+            state = hunterState.reaping;
+            Debug.Log("YOU RE DEAD");
+        }
+    }*/
+    private void reap()
+    {
         
     }
-
     private float manhattanDistance(Vector3 a, Vector3 b)
     {
         return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
@@ -72,3 +134,4 @@ public class HunterController : MonoBehaviour
     }
     
 }
+
