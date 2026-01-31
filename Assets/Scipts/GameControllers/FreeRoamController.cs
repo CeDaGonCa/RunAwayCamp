@@ -10,6 +10,7 @@ public class FreeRoamController : MonoBehaviour
     private CameraFlow cameraTarget;
     Turns currentTurn;
     private float timer;
+    public float timePerTurn = 10f;
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class FreeRoamController : MonoBehaviour
         }
         timer += Time.deltaTime;
 
-        if(timer > 10f)
+        if(timer > timePerTurn)
         {
             timer = 0f;
             changeTurn();

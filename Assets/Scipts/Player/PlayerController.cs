@@ -31,13 +31,10 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
-                Vector3 targetPos = transform.position;
+                var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
-                if (/*isWalkable(targetPos)*/true)
-                {
-                    StartCoroutine(Move(targetPos));
-                }
+                StartCoroutine(Move(targetPos));
                 
             }
         }
@@ -48,7 +45,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
-        while((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon*2)
+        while((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
             transform.position = Vector3.MoveTowards(transform.position,targetPos, moveSpeed * Time.deltaTime);
             yield return null;
