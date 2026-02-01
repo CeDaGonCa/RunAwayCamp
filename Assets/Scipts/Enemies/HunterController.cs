@@ -70,7 +70,9 @@ public class HunterController : MonoBehaviour
                     direction = availableDirection;
                 }
             }
-
+            
+            animator.SetFloat("moveX",direction.x);
+            animator.SetFloat("moveY",direction.y);
             StartCoroutine(Move(transform.position + direction));
             if(Physics2D.OverlapCircle(transform.position,circleRadius,playerLayer) != null)
             {
@@ -79,6 +81,7 @@ public class HunterController : MonoBehaviour
             }
             visitedPosition.Add(transform.position + direction);
         }
+        animator.SetBool("isMoving", isMoving);
     }
     private bool isWalkable(Vector3 targetPos)
     {

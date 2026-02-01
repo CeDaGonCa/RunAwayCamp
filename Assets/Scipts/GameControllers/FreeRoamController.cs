@@ -12,8 +12,8 @@ public class FreeRoamController : MonoBehaviour
     [SerializeField] Camera worldCamera;
     [SerializeField] Text turnText;
     [SerializeField] Image portrait;
-    [SerializeField] Sprite playerSprite;
-    [SerializeField] Sprite hunterSprite;
+    [SerializeField] Sprite playerToken;
+    [SerializeField] Sprite hunterToken;
     
     
     private CameraFlow cameraTarget;
@@ -27,7 +27,7 @@ public class FreeRoamController : MonoBehaviour
         
         cameraTarget = worldCamera.GetComponent<CameraFlow>();
         cameraTarget.target = playerController.transform;
-        portrait.sprite = playerSprite;
+        portrait.sprite = playerToken;
         turnText.text = "Your turn";
         hunterController.onPlayerDeath += playerDeath;
     }
@@ -55,15 +55,17 @@ public class FreeRoamController : MonoBehaviour
         {
             currentTurn = Turns.HunterTurn;
             cameraTarget.target = hunterController.transform;
-            portrait.sprite = hunterSprite;
+            portrait.sprite = hunterToken;
             turnText.text = "Hunter's turn";
             portrait.color = Color.red;
+            playerController.stopAnimaiton();
+            
         }
         else if (currentTurn == Turns.HunterTurn)
         {
             currentTurn = Turns.PlayerTurn;
             cameraTarget.target = playerController.transform;
-            portrait.sprite = playerSprite;
+            portrait.sprite = playerToken;
             turnText.text = "Your turn";
         }
     }

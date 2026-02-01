@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 009f89fb770f18545b58cb7e5a551bc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4640172532027315898
+    second: hunterSprite_0
+  - first:
+      213: 5982513442566393719
+    second: hunterSprite_1
+  - first:
+      213: -6339281970058419224
+    second: hunterSprite_2
+  - first:
+      213: 1608065888595636428
+    second: hunterSprite_3
+  - first:
+      213: -4341957196699420837
+    second: hunterSprite_4
+  - first:
+      213: 1524447037795778233
+    second: hunterSprite_5
+  - first:
+      213: -2702249342625782828
+    second: hunterSprite_6
+  - first:
+      213: -6233410753481684720
+    second: hunterSprite_7
+  - first:
+      213: 2774980125833178487
+    second: hunterSprite_8
+  - first:
+      213: 6806036658598574733
+    second: hunterSprite_9
+  - first:
+      213: -8816858561331030524
+    second: hunterSprite_10
+  - first:
+      213: -961636303817358229
+    second: hunterSprite_11
+  - first:
+      213: 1616236471974029118
+    second: hunterSprite_12
+  - first:
+      213: -3234741971894985107
+    second: hunterSprite_13
+  - first:
+      213: 2275098749215639976
+    second: hunterSprite_14
+  - first:
+      213: 5066043089967136451
+    second: hunterSprite_15
+  - first:
+      213: 3563828119623471582
+    second: hunterSprite_16
+  - first:
+      213: 7676797953226412179
+    second: hunterSprite_17
+  - first:
+      213: -3177494750720389267
+    second: hunterSprite_18
+  - first:
+      213: 8884823779992086275
+    second: hunterSprite_19
+  - first:
+      213: -957688052036976404
+    second: hunterSprite_20
+  - first:
+      213: -7602548474192274962
+    second: hunterSprite_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hunterSprite_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6530c4554356040800000000000000
+      internalID: 4640172532027315898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_1
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f4b208748260350800000000000000
+      internalID: 5982513442566393719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e321ab92a85608a0800000000000000
+      internalID: -6339281970058419224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc07a21e76ff05610800000000000000
+      internalID: 1608065888595636428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 0
+        width: 343
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57b7cc2fe44eb3c0800000000000000
+      internalID: -4341957196699420837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 0
+        width: 343
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9beb6b6018ce72510800000000000000
+      internalID: 1524447037795778233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_6
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 0
+        width: 343
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3e14e3a8eaf7ad0800000000000000
+      internalID: -2702249342625782828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_7
+      rect:
+        serializedVersion: 2
+        x: 3532
+        y: 0
+        width: 343
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019cf9b12f97e79a0800000000000000
+      internalID: -6233410753481684720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_8
+      rect:
+        serializedVersion: 2
+        x: 4031
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d2e03d8b5b28620800000000000000
+      internalID: 2774980125833178487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_9
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8afd04f746e37e50800000000000000
+      internalID: 6806036658598574733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_10
+      rect:
+        serializedVersion: 2
+        x: 5032
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40690092ad934a580800000000000000
+      internalID: -8816858561331030524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_11
+      rect:
+        serializedVersion: 2
+        x: 5531
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64c8db60e497a2f0800000000000000
+      internalID: -961636303817358229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_12
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37ea0112860e6610800000000000000
+      internalID: 1616236471974029118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_13
+      rect:
+        serializedVersion: 2
+        x: 6531
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e1721a053eb13d0800000000000000
+      internalID: -3234741971894985107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_14
+      rect:
+        serializedVersion: 2
+        x: 7031
+        y: 0
+        width: 437
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a90fe72246c29f10800000000000000
+      internalID: 2275098749215639976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_15
+      rect:
+        serializedVersion: 2
+        x: 7531
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce305a69533e4640800000000000000
+      internalID: 5066043089967136451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_16
+      rect:
+        serializedVersion: 2
+        x: 8175
+        y: 0
+        width: 293
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed194b6fac2457130800000000000000
+      internalID: 3563828119623471582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_17
+      rect:
+        serializedVersion: 2
+        x: 8675
+        y: 0
+        width: 293
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3909186a017798a60800000000000000
+      internalID: 7676797953226412179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_18
+      rect:
+        serializedVersion: 2
+        x: 9032
+        y: 0
+        width: 293
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f84abfb5547e3d0800000000000000
+      internalID: -3177494750720389267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_19
+      rect:
+        serializedVersion: 2
+        x: 9532
+        y: 0
+        width: 293
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3072f52772c3d4b70800000000000000
+      internalID: 8884823779992086275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_20
+      rect:
+        serializedVersion: 2
+        x: 10031
+        y: 0
+        width: 437
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce043bc6acb95b2f0800000000000000
+      internalID: -957688052036976404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hunterSprite_21
+      rect:
+        serializedVersion: 2
+        x: 10615
+        y: 0
+        width: 353
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9d41851725e7690800000000000000
+      internalID: -7602548474192274962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hunterSprite_0: 4640172532027315898
+      hunterSprite_1: 5982513442566393719
+      hunterSprite_10: -8816858561331030524
+      hunterSprite_11: -961636303817358229
+      hunterSprite_12: 1616236471974029118
+      hunterSprite_13: -3234741971894985107
+      hunterSprite_14: 2275098749215639976
+      hunterSprite_15: 5066043089967136451
+      hunterSprite_16: 3563828119623471582
+      hunterSprite_17: 7676797953226412179
+      hunterSprite_18: -3177494750720389267
+      hunterSprite_19: 8884823779992086275
+      hunterSprite_2: -6339281970058419224
+      hunterSprite_20: -957688052036976404
+      hunterSprite_21: -7602548474192274962
+      hunterSprite_3: 1608065888595636428
+      hunterSprite_4: -4341957196699420837
+      hunterSprite_5: 1524447037795778233
+      hunterSprite_6: -2702249342625782828
+      hunterSprite_7: -6233410753481684720
+      hunterSprite_8: 2774980125833178487
+      hunterSprite_9: 6806036658598574733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
