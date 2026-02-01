@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     
     private Animator animator;
+    public event Action onDeath;
     
     
     private void Awake()

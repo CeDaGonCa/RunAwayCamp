@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Turns { PlayerTurn, HunterTurn }
@@ -28,6 +29,7 @@ public class FreeRoamController : MonoBehaviour
         cameraTarget.target = playerController.transform;
         portrait.sprite = playerSprite;
         turnText.text = "Your turn";
+        hunterController.onPlayerDeath += playerDeath;
     }
     private void Update()
     {
@@ -65,6 +67,10 @@ public class FreeRoamController : MonoBehaviour
             turnText.text = "Your turn";
         }
     }
-
+    void playerDeath()
+    {
+        // PlaySomeAnimation;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
 }

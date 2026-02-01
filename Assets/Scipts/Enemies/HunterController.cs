@@ -14,6 +14,7 @@ public class HunterController : MonoBehaviour
     
     private Animator animator;
     private hunterState state;
+    public event Action onPlayerDeath;
     
     private Vector3[] possibleDirections;
 
@@ -112,7 +113,7 @@ public class HunterController : MonoBehaviour
     }*/
     private void reap()
     {
-        
+        onPlayerDeath();
     }
     private float manhattanDistance(Vector3 a, Vector3 b)
     {
