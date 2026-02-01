@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class MainLightSource : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Light2D mainLight;
+    void Awake()
+    {
+        mainLight = GetComponent<Light2D>();
+    }
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        mainLight.intensity = 0f;
     }
 }

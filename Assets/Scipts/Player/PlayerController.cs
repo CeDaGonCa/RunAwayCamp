@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask solidObjectsLayer;
     private bool isMoving;
     private Vector2 input;
-    
     private Animator animator;
+    [SerializeField] GameObject flashLight;
     
     
     private void Awake()
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
                 var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
+                flashLight.transform.rotation = Quaternion.Euler(0,0,-input.x * 90 + (input.y == -1? 180:0) );
                 if(isWalkable(targetPos))
                     StartCoroutine(Move(targetPos));
                 

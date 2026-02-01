@@ -57,7 +57,6 @@ public class FreeRoamController : MonoBehaviour
             cameraTarget.target = hunterController.transform;
             portrait.sprite = hunterToken;
             turnText.text = "Hunter's turn";
-            portrait.color = Color.red;
             playerController.stopAnimaiton();
             
         }
