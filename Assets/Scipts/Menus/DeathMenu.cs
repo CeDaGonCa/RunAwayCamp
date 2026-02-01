@@ -6,6 +6,12 @@ public class DeathMenu : MonoBehaviour
     {
         // Change later
 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void Menu()
+    {
+        // Change later
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 

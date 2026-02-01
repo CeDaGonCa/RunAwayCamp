@@ -19,7 +19,7 @@ public class EventDisplay : MonoBehaviour
         var sequence = DOTween.Sequence();
         sequence.Append(text.transform.DOLocalMoveY(originalPos.y + 150f, 0.5f));
         //sequence.Join(text.DOFade(100f,0.5));
-        sequence.AppendInterval(1f);
+        sequence.AppendInterval(2f);
         sequence.Append(text.transform.DOLocalMoveY(originalPos.y,0.5f));
 
 

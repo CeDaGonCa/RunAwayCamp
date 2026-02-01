@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
     private Animator animator;
     [SerializeField] GameObject flashLight;
+    [SerializeField] AudioClip stepsSound;
     
     
     private void Awake()
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
     {
         if (!isMoving)
         {
+            
+            
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
             
@@ -29,6 +32,10 @@ public class PlayerController : MonoBehaviour
 
             if(input != Vector2.zero)
             {
+                if(UnityEngine.Random.value * 100 <= 10f)
+                    {
+                        SoundFXManager.instance.PlaySoundFXClip(stepsSound,transform,1f);
+                    }
                 animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
                 var targetPos = transform.position;

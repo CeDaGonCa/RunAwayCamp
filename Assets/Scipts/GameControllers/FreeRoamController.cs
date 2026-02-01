@@ -18,7 +18,9 @@ public class FreeRoamController : MonoBehaviour
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] Timer gameTimer;
     [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] TextMeshProUGUI finalTimer;
     [SerializeField] EventDisplay eventText;
+    [SerializeField] AudioClip turnChangeSound;
     
     Turns currentTurn;
     private List<HunterController> hunters;
@@ -76,6 +78,8 @@ public class FreeRoamController : MonoBehaviour
     }
     private void changeTurn()
     {
+        if(currentTurn != Turns.EndOfGame)
+            SoundFXManager.instance.PlaySoundFXClip(turnChangeSound,transform,1f);
         if (currentTurn == Turns.PlayerTurn)
         {
             currentTurn = Turns.HunterTurn;
@@ -94,7 +98,7 @@ public class FreeRoamController : MonoBehaviour
             timePerTurn = playerTime;
             if(UnityEngine.Random.value * 100 <= 34f)
             {
-                int function = Random.Range(0,1);
+                int function = Random.Range(0,2);
                 if(function == 0)
                 {
                     makeNewHunter();
@@ -117,7 +121,8 @@ public class FreeRoamController : MonoBehaviour
         float finalElapsedTime = gameTimer.stopTimer();
         int minutes = Mathf.FloorToInt(finalElapsedTime / 60);
         int seconds = Mathf.FloorToInt(finalElapsedTime % 60);
-        timerText.text = string.Format("Congrats! You survived for: {0:00}:{1:00}",minutes, seconds);
+        timerText.enabled = false;
+        finalTimer.text = string.Format("Congrats! You survived for: {0:00}:{1:00}",minutes, seconds);
 
     }
 

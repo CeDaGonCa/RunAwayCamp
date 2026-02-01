@@ -20,6 +20,7 @@ public class HunterController : MonoBehaviour
 
     [SerializeField] Transform playerPos;
     [SerializeField] LayerMask playerLayer;
+    [SerializeField] AudioClip DeathSound;
     public float circleRadius = 1.25f;
     
     
@@ -116,6 +117,7 @@ public class HunterController : MonoBehaviour
     }*/
     private void reap()
     {
+        SoundFXManager.instance.PlaySoundFXClip(DeathSound,transform,1f);
         onPlayerDeath();
     }
     private float manhattanDistance(Vector3 a, Vector3 b)
